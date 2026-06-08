@@ -38,6 +38,16 @@ p{
     margin-bottom:20px;
 }
 
+.field-label{
+    display:block;
+    text-align:left;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-size:.9rem;
+    font-weight:600;
+    color:#ff4f9a;
+}
+
 .btns{
     display:flex;
     gap:15px;
@@ -81,7 +91,7 @@ select{
 .heart{
     position:fixed;
     font-size:18px;
-    opacity:.4;
+    opacity:.9;
     pointer-events:none;
     animation:float linear infinite;
 }
