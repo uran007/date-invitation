@@ -29,10 +29,7 @@ let char = 0;
 
 function typeWriter() {
 
-    if (line >= messages.length) {
-        typingSub.textContent = "I built this just for you.";
-        return;
-    }
+    
 
     if (char < messages[line].length) {
 
