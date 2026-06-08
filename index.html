@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="Aya.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="welcome">
+        <div class="welcome-card">
+            <h1>💌 A Letter For You</h1>
+            <p>I made something special...</p>
+            <button id="startBtn">Open My Invitation ❤️</button>
+        </div>
+    </div>
+
+    <div class="card hidden" id="screen1">
+        <h1 id="typingText">💌</h1>
+        <p id="typingSub"></p>
+
+        <div class="btns">
+            <button class="yes" id="yesBtn">Yes 💖</button>
+            <button class="no" id="noBtn">No</button>
+        </div>
+    </div>
+
+    <div class="card hidden" id="screen2">
+        <h1>💖 Plan Our Date</h1>
+
+        <input type="date" id="date">
+
+        <select id="food">
+            <option>Coffee ☕</option>
+            <option>Burger 🍔</option>
+            <option>Pizza 🍕</option>
+            <option>Milk Tea 🧋</option>
+        </select>
+
+        <select id="activity">
+            <option>Movie 🎬</option>
+            <option>Walk 🌅</option>
+            <option>Coffee Date ☕</option>
+            <option>Arcade 🎮</option>
+        </select>
+
+        <button class="yes" id="nextBtn">Continue</button>
+    </div>
+
+    <div class="card hidden" id="screen3">
+        <h1>❤️ It's A Date!</h1>
+
+        <p id="summary"></p>
+
+        <button class="yes" onclick="copyPlan()">
+            Copy Plan
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

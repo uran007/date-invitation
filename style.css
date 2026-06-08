@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+    overflow:hidden;
+}
+
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.2);
+    padding:40px;
+    border-radius:32px;
+    width:min(90vw,600px);
+    text-align:center;
+    position:relative;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+    animation:fadeIn .5s ease;
+}
+
+
+h1{
+    color:#ff4f9a;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+.btns{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    position:relative;
+    height:60px;
+}
+
+button{
+    border:none;
+    padding:14px 28px;
+    border-radius:999px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.yes{
+    background:#ff4f9a;
+    color:white;
+}
+
+.no{
+    background:#eee;
+    position:absolute;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:12px;
+}
+
+.hidden{
+    display:none;
+}
+
+.heart{
+    position:fixed;
+    font-size:18px;
+    opacity:.4;
+    pointer-events:none;
+    animation:float linear infinite;
+}
+
+#typingText{
+    min-height:90px;
+    line-height:1.4;
+}
+
+#typingSub{
+    opacity:.8;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes float{
+    from{
+        transform:translateY(110vh);
+    }
+
+    to{
+        transform:translateY(-20vh);
+    }
+}
+
+#welcome{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    z-index:9999;
+}
+
+.welcome-card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(20px);
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+}
+
+#startBtn{
+    background:#ff4f9a;
+    color:white;
+    margin-top:20px;
+}
+
